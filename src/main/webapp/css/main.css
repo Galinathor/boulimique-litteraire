@@ -19,7 +19,7 @@ body
 
 .container {
     padding: 0;
-    width: 1070px;
+    width: 1066px;
 }
 
 .navbar {
@@ -70,8 +70,9 @@ body
 
 .slide-control{
     background-color: rgb(148,144,140);
-    width: 1070px;
+    width: 100%;
     margin-bottom: 15px;
+    border: 2px solid rgb(118,114,110);
 }
 
 .carousel{
@@ -185,7 +186,7 @@ body
 }
 
 .panel{
-    width:1070px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -227,4 +228,8 @@ div {
 .line-separator {
     border-bottom: 1px solid rgb(214,211,202);
     margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
 }

@@ -17,3 +17,20 @@
         </div>
     </div>
 </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h4><b>Ajouter un commentaire</b></h4>
+        <div class="line-separator"></div>
+        <form ng-model="comment">
+            <div class="form-group">
+                <textarea placeholder="Notez ici votre commentaire" class="form-control" rows="4" ng-model="comment.comment"></textarea>
+            </div>
+            <button class="pull-right" ng-click="sendComment(comment)"><b>Envoyer</b></button>
+        </form>
+    </div>
+</div>
+<div class="panel panel-default" ng-repeat="comment in comments | orderBy: 'creationDate':true">
+    <div class="panel-body">
+        {{comment.comment}}
+    </div>
+</div>
