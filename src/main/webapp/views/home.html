@@ -1,0 +1,71 @@
+<div class="slide-control">
+    <carousel interval="interval">
+        <slide ng-repeat="article in lastArticles" active="article.active">
+            <div class="slide-background" ng-if="article.jacket.url">
+                <img src="{{article.jacket.url}}" />
+            </div>
+            <div class="slide-title">
+                <h2><b>{{article.title}}</b></h2>
+            </div>
+            <div class="slide-content">
+                <p ng-if="article.type == 'book'">
+                    <b>
+                        Genre : {{article.kind}}<br>
+                        Auteur : {{article.author}}<br>
+                        <span ng-if="article.publicationDate">Date de publication : {{article.publicationDate}}<br></span>
+                        Note : {{article.grade}}/10<br>
+                    </b>
+                </p>
+                <p ng-if="article.type == 'recipe'">
+                    <b>
+                        Type : {{article.kind}}<br>
+                        Difficulté : {{article.difficulty}}<br>
+                        Source : {{article.source}}<br>
+                        Note : {{article.grade}}/10<br>
+                    </b>
+                </p>
+            </div>
+        </slide>
+    </carousel>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Présentation</div>
+    <div class="panel-body">
+        Bonjour à tous et à toutes,
+        <br><br>
+        Tout d'abord, je me présente, je m'appelle Mélodie et comme vous avez peut-être pu le deviner, je
+        suis une boulimique littéraire. Mais qu'est-ce qu'une personne que l'on appelle boulimique littéraire
+        me direz-vous ? Et bien, c'est bien simple, une boulimique littéraire est une personne qui dévore des
+        livres et ce, au sens figuré du terme, cela va sans dire. Cependant, ici, j'ai voulu jouer sur ces deux
+        mots pour pouvoir mêler deux de mes grandes passions qui sont la cuisine et la lecture. En effet, je
+        dévore les livres ainsi que les bons petits plats ! Je vous souhaite donc la bienvenue sur mon site,
+        dédié à ces deux activités.<br><br>
+        Bien, maintenant que les présentations sont faites, passons à quelques explications sur le
+        fonctionnement du site. Vous vous trouvez actuellement sur la page Accueil du site mais, si
+        vous regardez bien, vous pourrez discerner en haut à gauche deux autres liens : Recette et
+        Livres.<br><br>
+        La page Livres est dédiée, comme vous aurez pu le deviner, à mes lectures. Vous pourrez
+        découvrir les livres que j'ai lu, leur résumé, mon avis à leur propos ainsi qu'une note personnelle
+        que je leur ai attribués en m'efforçant de rester la plus impartiale possible. Mais, pour que ce soit
+        beaucoup plus intéressant, vous pourrez à votre tour noter ces livres et laisser votre propre avis
+        dessus (grâce à votre compte Facebook ou en créant un compte), vos notes seront prises en compte
+        et détermineront la note finale du livre qui sera mise à jour en temps réel. Ces notes, vous pourrez
+        les retrouver sur la page d’accueil de la rubrique Livres sous l'intitulé Livres du mois.
+        Voilà, je pense avoir fait le tour en ce qui concerne les livres.<br><br>
+        Passons à la rubrique Cuisine. Celle-ci sera basée sur le même schéma que les livres à quelques
+        différences près. Vous pourrez toujours noter les recettes que je vous propose, vos notes
+        s'ajouteront toujours à la mienne. En dessous de l'intitulé de la recette, vous trouverez le niveau de
+        difficulté de celle-ci et la source, car oui, j'ai beau aimer cuisiner, j'avoue que je m'inspire ou teste
+        des recettes tirées de livres ou de sites bien connus, pour certaines, comme tout le monde quoi !
+        Pour finir, j'espère pouvoir poster de quatre à six articles par mois, tout dépendra de mon emploi
+        du temps et de ma motivation.<br><br>
+        Voilà, je pense avoir tout dit. Je vous souhaite de passer un agréable moment sur Boulimique-Littéraire
+        et vous invite à cliquer sur le petit lien Contact en haut à droite si vous avez une
+        quelconque remarque, question ou critique à m'adresser.
+        <br><br>
+        A très vite !
+        <br>
+        <p style="float: right">Mélodie.</p>
+    </div>
+</div>

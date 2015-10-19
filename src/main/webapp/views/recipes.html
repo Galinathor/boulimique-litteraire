@@ -1,0 +1,12 @@
+<div class="panel panel-default" ng-repeat="recipe in recipes.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
+    <div class="panel-heading">{{recipe.title}}</div>
+    <div class="panel-body">
+        Source : {{recipe.source}}<br>
+        Type : {{recipe.kind}}<br>
+        Note : {{recipe.grade}}/10<br>
+        Difficulté : {{recipe.difficulty}}<br>
+        <div class="linkTo"><a href="#/recipe/{{recipe.id}}">Lire la suite...</a></div>
+    </div>
+</div>
+
+<pagination total-items="recipes.length" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm" items-per-page="itemsPerPage"></pagination>

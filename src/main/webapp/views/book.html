@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading">{{book.title}}</div>
+    <div class="panel-body">
+        Auteur : {{book.author}}<br>
+        Genre : {{book.kind}}<br>
+        <span ng-if="book.publicationDate">Date de publication : {{book.publicationDate}} <br></span>
+        Note : {{book.grade}}/10 <br>
+        <div>
+            <h3><b>Resumé</b></h3>
+            <div class="line-separator"></div>
+            {{book.sumUp}}
+        </div>
+        <div>
+            <h3><b>Opinion</b></h3>
+            <div class="line-separator"></div>
+            {{book.opinion}}
+        </div>
+    </div>
+</div>

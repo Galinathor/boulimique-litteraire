@@ -1,0 +1,12 @@
+<div class="panel panel-default" ng-repeat="book in books.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
+    <div class="panel-heading">{{book.title}}</div>
+    <div class="panel-body">
+        Auteur : {{book.author}}<br>
+        Genre : {{book.kind}}<br>
+        <span ng-if="book.publicationDate">Date de publication : {{book.publicationDate}} <br></span>
+        Note : {{book.grade}}/10 <br>
+        <div class="linkTo"><a href="#/book/{{book.id}}">Lire la suite...</a></div>
+    </div>
+</div>
+
+<pagination total-items="books.length" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm" items-per-page="itemsPerPage"></pagination>
